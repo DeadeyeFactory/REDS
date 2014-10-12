@@ -1,45 +1,60 @@
 /*For proper map sizing*/
 html {
-height: 100%;
+  height: 100%;
 }
- 
+
 body {
-height: 100%;
-margin: 0;
-padding: 0;
-background-color: #919191;
-color: #f0ead6;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #919191;
+  color: #f0ead6;
 }
 /*End map adjustment*/
- 
+
 #right {
-background-color: #4a4a4a;
-border-left: 2px solid red;
+  background-color: #4a4a4a;
+  border-left: 2px solid red;
 }
- 
+
 #left {
-height: 75%;
-border-right: 2px solid red;
-padding: 50px 0;
+  height: 100%;
+  border-right: 2px solid red;
+  padding: 50px 0;
 }
 #emmy-outer {
-width: 220px;
-height: 375px;
-border: 3px solid black;
-border-radius: 15px;
-padding: 0;
+  width: 220px;
+  height: 375px;
+  background-color: #c0c0c0;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 2px 0 0 0;
+  resize: both;
 }
- 
+
 #emmy-inner {
-width: 210px;
-height: 368px;
-border-style: solid;
-border-color: black;
-border-radius: 15px;
-border-top-width: 15px;
-border-bottom-width: 30px;
-border-left-width: 2px;
-border-right-width: 2px;
-color: black;
-background-color: white;
+  width: 95%;
+  height: 98%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  border-top-width: 15px;
+  border-bottom-width: 30px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  color: black;
+  background-color: white;
+  overflow: auto;
+}
+
+#picBox {
+  width: 100%;
+  height: auto;
+}
+
+#vidBoxFrame {
+  allowfullscreen;
+  frameborder: 0;
+  width: 100%;
+  height: auto;
 }
