@@ -18,10 +18,6 @@
         <button type="button" class="btn btn-info btn-block">Contact Info</button><br>
         <button type="button" class="btn btn-info btn-block">Video</button><br>
         <button type="button" class="btn btn-info btn-block">Social Sharing</button><br>
-        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
-        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
-        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
-        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
       </div>
   
       <div class="col-xs-8 col-sm-9 col-md-6 col-lg-6 pull-left" id="left">
@@ -47,15 +43,54 @@
                 <iframe id="vidBoxFrame" src="https://www.youtube.com/embed/-tXfBhR5xh8" allowfullscreen frameborder="0"></iframe>
               </div>
               <div id="socialShare">
-                <div class="center-block">
-                  <h5 class="text-center">Share This!</h5>
-                </div>
-                <div id="twiter">
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-text="I'm selling my house!" data-count="none" data-hashtags="REDS">Tweet</a>
-                </div>
-                <div class="g-plus" data-action="share" data-annotation="none">
+                <h5 class="text-center text-info">Share This!</h5>
+                <div id="socialLinks">
+                  <div id="twiter">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-hashtags="REDS">Tweet</a>
+                  </div>
+                  <div class="g-plus" data-action="share" data-annotation="none">
+                  </div>
                 </div>
               </div>
+              <div id=navigation class="center-block">
+                <div id="navHeader">
+                  <h4 class="text-center">Navigation</h4>
+                </div>
+                <div id="navButtons">
+                  <button type="button" class="btn btn-block btn-warning" data-toggle="collapse" data-target="#PropDets">
+                    <span class="glyphicon glyphicon-chevron-down pull-right chevy"></span>
+                    <span>Property Details</span>
+                  </button>
+                  <div class="collapse" id="PropDets">
+                    <p>Details of the property go here.</p>
+                  </div>
+                  <button type="button" class="btn btn-block btn-danger" data-toggle="collapse" data-target="#Map">
+                    <span class="glyphicon glyphicon-chevron-down pull-right chevy"></span>
+                    <span>Map To Property</span>
+                  </button>
+                  <div class="collapse" id="Map">
+                    <p>Implement google maps api here</p>
+                  </div>
+                  <button type="button" class="btn btn-block btn-info" data-toggle="collapse" data-target="#SellerInfo">
+                    <span class="glyphicon glyphicon-chevron-down pull-right chevy"></span>
+                    <span>Seller Information</span>
+                  </button>
+                  <div class="collapse" id="SellerInfo">
+                    <p>Seller information goes here.</p>
+                  </div>
+                </div>
+              </div>
+              <footer>
+               <div id="byLine">
+                 <p>R.E.D.S. App Builder - DeadEye Factory</p>
+               </div>
+               <div id="legal">
+                 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-info-sign"></span><br><span>R.E.D.S.</span></button><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-info-sign"></span><br><span>E.U.L.A.</span></button><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-info-sign"></span><br><span>Policy</span></button>
+              </div>
+              <div id="copyRight">
+                <p>&copy;2014 Real Estate Digital Sales</p>
+              </div>
+            </footer>
             </div>
           </div>
         </div>
@@ -72,6 +107,8 @@
   <script src="https://apis.google.com/js/platform.js" async defer></script>
       
   <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+  
+  <script src="script.js"></script>
 
 
 </body>
