@@ -15,13 +15,13 @@
       <div class="col-xs-4 col-sm-3 col-md-6 col-lg-6 pull-right" id="right">
         <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
         <button type="button" class="btn btn-info btn-block">Property Adress / Price</button><br>
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
+        <button type="button" class="btn btn-info btn-block">Contact Info</button><br>
+        <button type="button" class="btn btn-info btn-block">Video</button><br>
+        <button type="button" class="btn btn-info btn-block">Social Sharing</button><br>
+        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
+        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
+        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
+        <button type="button" class="btn btn-info btn-block">Place Holder</button><br>
       </div>
   
       <div class="col-xs-8 col-sm-9 col-md-6 col-lg-6 pull-left" id="left">
@@ -34,12 +34,31 @@
               <div id="picBox">
                 <img src="http://image.shutterstock.com/display_pic_with_logo/7096/7096,1123452630,2/stock-photo-american-farm-house-470571.jpg" class="img-responsive" atl="If you're reading this I have failed." />
               </div>
+              <div id="location">
+                <p class="text-center" id="address">1234 Your Street, City, State, Post/Zip Code, Country</p>
+                <p class="text-center" id="price">List Price: $800,000 - $820,000</p>
+              </div>
+              <div id="contact">
+                <button type="button" class="btn btn-sm glyphicon glyphicon-phone-alt"></button>
+                <button type="button" class="btn btn-sm glyphicon glyphicon-envelope"></button>
+                <button type="button" class="btn btn-sm glyphicon glyphicon-comment"></button>
+              </div>
               <div id="vidBox">
-                <iframe id="vidBoxFrame" src="https://www.youtube.com/embed/-tXfBhR5xh8"></iframe>
+                <iframe id="vidBoxFrame" src="https://www.youtube.com/embed/-tXfBhR5xh8" allowfullscreen frameborder="0"></iframe>
+              </div>
+              <div id="socialShare">
+                <div class="center-block">
+                  <h5 class="text-center">Share This!</h5>
+                </div>
+                <div id="twiter">
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-text="I'm selling my house!" data-count="none" data-hashtags="REDS">Tweet</a>
+                </div>
+                <div class="g-plus" data-action="share" data-annotation="none">
+                </div>
               </div>
             </div>
           </div>
-        <div>
+        </div>
       </div>
     </div>
   </div>
@@ -47,8 +66,13 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
       
   <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+
 
 </body>
 </html>
