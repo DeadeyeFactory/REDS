@@ -45,6 +45,7 @@ body {
   color: black;
   background-color: white;
   overflow: auto;
+  font: 12px Arial, sans-serif;
 }
 
 #picBox {
@@ -52,9 +53,22 @@ body {
   height: auto;
 }
 
+#vidBox {
+  padding: 5px 0 0 0;
+}
+
 #vidBoxFrame {
-  allowfullscreen;
-  frameborder: 0;
   width: 100%;
   height: auto;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+#socialShare {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
 }
