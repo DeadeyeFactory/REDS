@@ -13,11 +13,61 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-sm-3 col-md-6 col-lg-6 pull-right" id="right">
-        <button type="button" class="btn btn-info btn-block">Picture Slider</button><br>
-        <button type="button" class="btn btn-info btn-block">Property Adress / Price</button><br>
-        <button type="button" class="btn btn-info btn-block">Contact Info</button><br>
-        <button type="button" class="btn btn-info btn-block">Video</button><br>
-        <button type="button" class="btn btn-info btn-block">Social Sharing</button><br>
+        <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#picInput">Picture Slider</button><br>
+        <div class="collapse" id="picInput">
+          <p>Choose up to 5 images to display</p>
+          <form name="picSliderInput">
+            <input type="file" accept="image/*"><br>
+            <input type="file" accept="image/*"><br>
+            <input type="file" accept="image/*"><br>
+            <input type="file" accept="image/*"><br>
+            <input type="file" accept="image/*"><br>
+            <button type="button" form="picSliderInput" class="btn btn-default">Add Images</button>
+          </form>
+        </div>
+        
+        <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#propAddressPrice">Property Adress / Price</button><br>
+        <div class="collapse" id="propAddressPrice">
+          <form name="placePrice">
+            <p>Address</p>
+            <input type="text" name="address" placeholder="1234 Your Street, City, State, Post/Zip Code, Country"><br>
+            <p>List Price</p>
+            <input type="number" name="minList"><br>to<br><input type="number" name="maxList"><br>
+            <button type="button" form="placePrice" class="btn btn-default">Update</button>
+          </form>
+        </div>
+        
+        <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#contactInfo">Contact Info</button><br>
+        <div class="collapse" id="contactInfo">
+          <form name="contact">
+            <p>Phone:</p>
+            <input type="tel" name="home" placeholder="Home"><br>
+            <input type="tel" name="mobile" placeholder="Mobile"><br>
+            <br>
+            <p>Email:</p>
+            <input type="email" name="email"><br>
+            <button type="button" form="contact" class="btn btn-default">Update</button>
+          </form>
+        </div>
+        
+        <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#video">Video</button><br>
+        <div class="collapse" id="video">
+          <form name="video">
+            <input type="file" accept="video/*">
+            <buton type="button" form="video" class="btn btn-default">Update</button>
+          </form>
+        </div>
+        
+        <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="socialPicker">Social Sharing</button><br>
+        <div class="collapse" id="socialPicker">
+          <form name="socialChoice">
+            <lable for="chooseTwitter">Twiter :</lable> <input type="checkbox" name="socialChoice" id="chooseTwitter"><br>
+            
+            <lable for="chooseFacebook">FaceBook :</lable> <input type="checkbox" name="socialChoice" id="chooseFaceBook"><br>
+            
+            <lable for="chooseGooglePlus">Google+ :</lable> <input type="checkbox" name="socialChoice" id="chooseGooglePlus"><br>
+          </form>
+        </div>
       </div>
   
       <div class="col-xs-8 col-sm-9 col-md-6 col-lg-6 pull-left" id="left">
